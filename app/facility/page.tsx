@@ -19,7 +19,7 @@ const FacilityPage = () => {
       <br />
       <h1>Meade LX200GPS</h1>
       <ul className='details'>
-        <li>- 16" (40.6 cm) Schmidt Cassegrain</li>
+        <li>- {'16" (40.6 cm) Schmidt Cassegrain'}</li>
         <li>- 4064mm focal length; f/10</li>
         <li>- Permanent concrete mount in the dome</li>
       </ul></div>
@@ -27,7 +27,7 @@ const FacilityPage = () => {
       <div className="grid-item"><div className=" center dome-img"></div>
       <br />
       <ul className='details'>
-        <li>- 15' ash dome</li>
+        <li>- {'15\' ash dome'}</li>
         <li>- Motorized rotation and slit controls</li>
         <li>- Located at <a className="link-details" href='http://mapper.acme.com/?ll=39.95395,-75.18607&z=19&t=H&marker0=39.95395%2C-75.18607%2C1.9%20km%20W%20of%20Philadelphia%20PA'>39.95395 N, 75.18607 W</a></li>
       </ul></div>
@@ -42,20 +42,20 @@ const FacilityPage = () => {
       <div className="grid-item">
         <h1 className='link-details'><a href="http://www.telescope.com/control/product/~category_id=dobsonians/~pcategory=telescopes/~product_id=09708">Orion XT10 Classic</a></h1>
       <ul className='details'>
-        <li>- 10" (25.4cm) Dobsonian (Newtonian), non-computerized</li>  
+        <li>- {'10" (25.4cm) Dobsonian (Newtonian), non-computerized'}</li>  
         <li>- 1200mm focal length, f/4.7</li>
       </ul></div>
 
       <div className="grid-item"><h1 className='link-details'><a href="http://scientificsonline.com/product.asp?pn=3002001&bhcd2=1204648478">Edmund Scientific Astroscan</a></h1>
       <ul className='details'>
-        <li>- 4" (10.5cm) Newtonian "red ball"</li>  
+        <li>- {'4" (10.5cm) Newtonian "red ball"'}</li>  
         <li>- 445 mm focal length, f/4.2</li>
         <li>- Standard camera tripod for portability</li>
       </ul></div>
 
      <div className="grid-item"> <h1>Meade LX200</h1>
       <ul className='details'>
-        <li>- 8" (20.3 cm) Schmidt Cassegrain</li>  
+        <li>- {'8" (20.3 cm) Schmidt Cassegrain'}</li>  
         <li>- portable equitorial mount</li>
       </ul></div>
 

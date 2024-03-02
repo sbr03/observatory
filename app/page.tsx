@@ -80,9 +80,9 @@ export default function Home() {
           </ul>
         </div>
         <br />
-        <h1>Named in honor of our benefactor, Mr. Joseph Lynch, the Lynch Observatory at Drexel houses a 16" Meade Schmidt-Cassegrain, the largest in Philadelphia. <br/> 
-        It is the main facility for Drexel's Physics 232: Observational Astrophysics, and serves host to frequent public observing nights. <br/>
-        Public open nights are scheduled (typically) for the first Wednesday of every month during the academic year. Open houses start roughly 30 minutes after sunset, and run for two hours after that.</h1>
+        <h1>{'Named in honor of our benefactor, Mr. Joseph Lynch, the Lynch Observatory at Drexel houses a 16" Meade Schmidt-Cassegrain, the largest in Philadelphia. '}<br/>
+        {'It is the main facility for Drexel\'s Physics 232: Observational Astrophysics, and serves host to frequent public observing nights.'} <br/>
+        {'Public open nights are scheduled (typically) for the first Wednesday of every month during the academic year. Open houses start roughly 30 minutes after sunset, and run for two hours after that.'}</h1>
       </div>
       <div className="card-center">
         <Card></Card>
@@ -92,7 +92,7 @@ export default function Home() {
       <br />
       <br />
       <div className="info-box">
-        <h3><i>The Joseph R. Lynch Observatory has been made possible by the Generosity of Joseph R. Lynch '58 and the GE Foundation.</i></h3>
+        <h3><i>{'The Joseph R. Lynch Observatory has been made possible by the Generosity of Joseph R. Lynch \'58 and the GE Foundation.'}</i></h3>
       </div>
     </main>
   );
