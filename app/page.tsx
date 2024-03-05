@@ -9,31 +9,41 @@ import Eclipse from './components/Countdown';
 export default function Home() {
   const [nextWednesday, setNextWednesday] = useState<Date | null>(null);
   const [countdown, setCountdown] = useState<string | null>(null);
-
+  //Change the date in this Date Object if you want to have an alternate date
+  const setDate = new Date('March 13, 2024 18:30:00');
   useEffect(() => {
     const firstWednesdays = getFirstWednesdays(2024);
     const futureFirstWednesdays = removePastDates(firstWednesdays);
+
+    //Use for generic Wednesday meeting 
+    //futureFirstWednesdays[0] = setDate;
     setNextWednesday(futureFirstWednesdays[0]);
 
+    //Use this for custom Wednesday (not first wednesday of the month)
+    //setNextWednesday(setDate);
+
     // Calculate countdown
-    const intervalId = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = futureFirstWednesdays[0].getTime() - now;
+    if (futureFirstWednesdays.length > 0) {
+      const intervalId = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = futureFirstWednesdays[0].getTime() - now;
+        //const distance = setDate.getTime() - now;
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-      setCountdown(`${days}d ${hours}h ${minutes}m`);
+        setCountdown(`${days}d ${hours}h ${minutes}m`);
 
-      // If the count down is finished, clear the interval
-      if (distance < 0) {
-        clearInterval(intervalId);
-        setCountdown("EXPIRED");
-      }
-    }, 1000);
+        // If the count down is finished, clear the interval
+        if (distance < 0) {
+          clearInterval(intervalId);
+          setCountdown("EXPIRED");
+        }
+      }, 1000);
 
-    return () => clearInterval(intervalId);
+      return () => clearInterval(intervalId);
+    }
   }, []); // Empty dependency array to run the effect only once
 
   return (
@@ -45,7 +55,7 @@ export default function Home() {
 
       <div className="background-container"></div>
       <NavMenu></NavMenu>
-      <div className="welcome">
+      <div className="welcome center">
         <h1>Welcome to the</h1>
         <h1>Joseph R. Lynch Observatory </h1>
         <h1>at Drexel University</h1>
@@ -68,30 +78,29 @@ export default function Home() {
                 day: "numeric",
               })}
           </h2>
-          <p id="countdown">{countdown}</p>
+          {countdown !== null && <p id="countdown">{countdown}</p>}
 
-          <h1>Status: Good</h1>
+          <h1>Status: TBD</h1>
           <br />
-          <h1>Tenative Upcoming Dates:</h1>
+          {/* Fix this with updated date function, pull first 3 dates from the list */}
+          {/* <h1>Tenative Upcoming Dates:</h1>
           <ul>
             <li>Wed, April 10th, 8-10pm</li>
             <li>Wed, May 8th, 8:30-10pm</li>
             <li>Wed, June 5th, 9-10pm</li>
-          </ul>
+          </ul> */}
         </div>
         <br />
         <h1>{'Named in honor of our benefactor, Mr. Joseph Lynch, the Lynch Observatory at Drexel houses a 16" Meade Schmidt-Cassegrain, the largest in Philadelphia. '}<br/>
         {'It is the main facility for Drexel\'s Physics 232: Observational Astrophysics, and serves host to frequent public observing nights.'} <br/>
         {'Public open nights are scheduled (typically) for the first Wednesday of every month during the academic year. Open houses start roughly 30 minutes after sunset, and run for two hours after that.'}</h1>
       </div>
-      <div className="card-center">
-        <Card></Card>
-        <br />
-        <Eclipse></Eclipse>
+      <div className="event-cards center">
+          <Card></Card>
+          <br />
+          <Eclipse></Eclipse>
       </div>
-      <br />
-      <br />
-      <div className="info-box">
+      <div className="info-box center">
         <h3><i>{'The Joseph R. Lynch Observatory has been made possible by the Generosity of Joseph R. Lynch \'58 and the GE Foundation.'}</i></h3>
       </div>
     </main>
