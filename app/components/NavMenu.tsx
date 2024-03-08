@@ -30,7 +30,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Sun Rise/Set",
-    href: "https://www.physics.drexel.edu/observatory/skycal/2023.shtml",
+    href: "https://www.timeanddate.com/sun/usa/philadelphia",
     description:
       "2024 Sky Calendar",
   },

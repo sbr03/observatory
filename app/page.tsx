@@ -10,17 +10,17 @@ export default function Home() {
   const [nextWednesday, setNextWednesday] = useState<Date | null>(null);
   const [countdown, setCountdown] = useState<string | null>(null);
   //Change the date in this Date Object if you want to have an alternate date
-  const setDate = new Date('March 13, 2024 18:30:00');
+  const setDate = new Date('April 10, 2024 20:00:00');
   useEffect(() => {
     const firstWednesdays = getFirstWednesdays(2024);
     const futureFirstWednesdays = removePastDates(firstWednesdays);
 
     //Use for generic Wednesday meeting 
-    //futureFirstWednesdays[0] = setDate;
-    setNextWednesday(futureFirstWednesdays[0]);
+    futureFirstWednesdays[0] = setDate;
+    //setNextWednesday(futureFirstWednesdays[0]);
 
     //Use this for custom Wednesday (not first wednesday of the month)
-    //setNextWednesday(setDate);
+    setNextWednesday(setDate);
 
     // Calculate countdown
     if (futureFirstWednesdays.length > 0) {
@@ -80,15 +80,15 @@ export default function Home() {
           </h2>
           {countdown !== null && <p id="countdown">{countdown}</p>}
 
-          <h1>Status: TBD</h1>
+          <h1>Status: Good</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
-          {/* <h1>Tenative Upcoming Dates:</h1>
+          <h1>Tenative Upcoming Dates:</h1>
           <ul>
             <li>Wed, April 10th, 8-10pm</li>
             <li>Wed, May 8th, 8:30-10pm</li>
             <li>Wed, June 5th, 9-10pm</li>
-          </ul> */}
+          </ul>
         </div>
         <br />
         <h1>{'Named in honor of our benefactor, Mr. Joseph Lynch, the Lynch Observatory at Drexel houses a 16" Meade Schmidt-Cassegrain, the largest in Philadelphia. '}<br/>
