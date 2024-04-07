@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import NavMenu from './components/NavMenu';
-import Card from './components/Card';
-import Eclipse from './components/Countdown';
+import Eclipse from './components/Eclipse';
 
 
 export default function Home() {
@@ -96,8 +95,6 @@ export default function Home() {
         {'Public open nights are scheduled (typically) for the first Wednesday of every month during the academic year. Open houses start roughly 30 minutes after sunset, and run for two hours after that.'}</h1>
       </div>
       <div className="event-cards center">
-          <Card></Card>
-          <br />
           <Eclipse></Eclipse>
       </div>
       <div className="info-box center">

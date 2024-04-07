@@ -23,6 +23,8 @@ export function CardDemo({ className, ...props }: CardProps) {
           <div>
           <h1>Solar Eclipse (but not an observatory event)</h1>
           <h1>Monday, April 8th, 2-4:30pm</h1>
+          <br />
+          <p>Nothing is planned at the observatory (since you can see the eclipse equally well from anywhere in the city, but likely places on campus where people will be gathering include Korman Quad and Perelman Plaza).  Please do not look directly at the Sun without approved eclipse glasses!  Maximum eclipse is at 3:32pm.</p>
           </div>
         </CardContent>
         <CardFooter>
