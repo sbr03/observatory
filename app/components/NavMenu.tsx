@@ -56,7 +56,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu className="ml-auto">
+    <NavigationMenu className="laptop:ml-auto">
       <NavigationMenuList>
       <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>

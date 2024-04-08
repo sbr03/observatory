@@ -30,7 +30,7 @@ const NavigationMenuList = React.forwardRef<
   <NavigationMenuPrimitive.List
     ref={ref}
     className={cn(
-      "group flex flex-1 list-none items-center justify-center space-x-4",
+      "group flex flex-1 list-none items-center justify-center laptop:space-x-4 tablet:space-x-1 ",
       className
     )}
     {...props}
@@ -41,11 +41,11 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
 // const navigationMenuTriggerStyle = cva(
-//   "group inline-flex h-10 sm:text-xxs lg:text-base sw-max items-center justify-center rounded-md bg-background px-4 py-2 sm:px-4 sm:py-10 text-dark-gray font-medium transition-colors hover:bg-soft-blue focus:bg-soft-blue focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+//   "group inline-flex h-10 sm:text-xxs lg:text-base w-max items-center justify-center rounded-md bg-background px-4 py-2 sm:px-4 sm:py-10 text-dark-gray font-medium transition-colors hover:bg-soft-blue focus:bg-soft-blue focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
 // )
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-dark-gray font-medium sm:text-xs transition-colors hover:bg-soft-blue focus:bg-soft-blue focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+  "group inline-flex lg:h-10 sm:h-4 w-max sm:text-xs lg:items-center laptop:justify-center rounded-md bg-background laptop:px-4 laptop:py-2 tablet:px-2 text-dark-gray font-medium transition-colors hover:bg-soft-blue focus:bg-soft-blue focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
 )
 
 const NavigationMenuTrigger = React.forwardRef<
