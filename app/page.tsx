@@ -79,7 +79,7 @@ export default function Home() {
           </h2>
           {countdown !== null && <p id="countdown">{countdown}</p>}
 
-          <h1>Status: Some clouds expected, but we'll be there unless it rains</h1>
+          <h1>Status: Some clouds expected, but we will be there unless it rains</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
