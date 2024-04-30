@@ -9,7 +9,7 @@ export default function Home() {
   const [nextWednesday, setNextWednesday] = useState<Date | null>(null);
   const [countdown, setCountdown] = useState<string | null>(null);
   //Change the date in this Date Object if you want to have an alternate date
-  const setDate = new Date('April 10, 2024 20:00:00');
+  const setDate = new Date('June 5, 2024 21:00:00');
   useEffect(() => {
     const firstWednesdays = getFirstWednesdays(2024);
     const futureFirstWednesdays = removePastDates(firstWednesdays);
@@ -79,14 +79,14 @@ export default function Home() {
           </h2>
           {countdown !== null && <p id="countdown">{countdown}</p>}
 
-          <h1>Status: Some clouds expected, but we will be there unless it rains</h1>
+          <h1>Status: Cancelled for month of May</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
           <ul>
-            <li>Wed, April 10th, 8-10pm</li>
-            <li>Wed, May 8th, 8:30-10pm</li>
             <li>Wed, June 5th, 9-10pm</li>
+            <li>July-September: Only open for special events</li>
+            <li>Wed, October 2nd, 7-9pm</li>
           </ul>
         </div>
         <br />
@@ -94,9 +94,7 @@ export default function Home() {
         {'It is the main facility for Drexel\'s Physics 232: Observational Astrophysics, and serves host to frequent public observing nights.'} <br/>
         {'Public open nights are scheduled (typically) for the first Wednesday of every month during the academic year. Open houses start roughly 30 minutes after sunset, and run for two hours after that.'}</h1>
       </div>
-      <div className="event-cards center">
-          <Eclipse></Eclipse>
-      </div>
+     
       <div className="info-box center">
         <h3><i>{'The Joseph R. Lynch Observatory has been made possible by the Generosity of Joseph R. Lynch \'58 and the GE Foundation.'}</i></h3>
       </div>
