@@ -78,7 +78,7 @@ export default function Home() {
                 day: "numeric",
               })} */}
           </h2>
-          {countdown !== null && <p id="countdown">{countdown}</p>}
+{/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
           <h1>Status: Professor Richards is unavailable and clouds are forecasted. Next opportunity TBD</h1>
           <br />
