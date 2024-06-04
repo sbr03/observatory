@@ -80,12 +80,12 @@ export default function Home() {
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
-          <h1>Status: Professor Richards is unavailable and clouds are forecasted. Next opportunity TBD</h1>
+          <h1>Status: Professor Richards is unavailable on June 5th and clouds are forecasted. Next opportunity TBD</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
           <ul>
-            <li>Wed, June 5th, 9-10pm</li>
+            <li>Wed, June TBD, 9-10pm</li>
             <li>July-September: Only open for special events</li>
             <li>Wed, October 2nd, 7-9pm</li>
           </ul>
