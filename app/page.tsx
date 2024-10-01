@@ -69,7 +69,7 @@ export default function Home() {
           <h1>Our next Open House is scheduled for:</h1>
           <br/>
           <h2 id="date">
-            TBD
+            Wed, October 2nd, 7-9pm
 {/*             {nextWednesday &&
               nextWednesday.toLocaleDateString("en-US", {
                 weekday: "long",
@@ -80,14 +80,14 @@ export default function Home() {
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
-          <h1>Status: Professor Richards is unavailable on June 5th and clouds are forecasted. Next opportunity TBD</h1>
+          <h1>Status: Pretty unlikely given cloud cover from remnants of Helene still moving through the area</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
           <ul>
-            <li>Wed, June TBD, 9-10pm</li>
-            <li>July-September: Only open for special events</li>
             <li>Wed, October 2nd, 7-9pm</li>
+            <li>Wed, November 6th, 5:30-7:30pm</li>
+            <li>Wed, December 4th, 5-7pm</li>
           </ul>
         </div>
         <br />
