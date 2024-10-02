@@ -85,7 +85,7 @@ export default function Home() {
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
           <ul>
-            <li>Wed, October 2nd, 7-9pm</li>
+            <li>Wed, October 9th, 7-9pm (TBD)</li>
             <li>Wed, November 6th, 5:30-7:30pm</li>
             <li>Wed, December 4th, 5-7pm</li>
           </ul>
