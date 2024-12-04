@@ -69,7 +69,7 @@ export default function Home() {
           <h1>Our next Open House is scheduled for:</h1>
           <br/>
           <h2 id="date">
-            Thurs, November 7th, 5:30-7:30pm
+            Thurs, December 5th, 5-7pm
 {/*             {nextWednesday &&
               nextWednesday.toLocaleDateString("en-US", {
                 weekday: "long",
@@ -80,13 +80,12 @@ export default function Home() {
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
-          <h1>Status: We see clouds rolling in on Wednesday at about 2pm, but going away by sunset on Thursday. So, we are going take a chance and move to Thursday</h1>
+          <h1>Status: Both the American and European weather models show clouds on Wednesday, so no open house.  We may try for Thursday, but it is unclear if we have enough help yet. Stay tuned.</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
           <ul>
-            <li>Thurs, November 7th, 5:30-7:30pm</li>
-            <li>Wed, December 4th, 5-7pm</li>
+            <li>Wed, December 5th, 5-7pm</li>
           </ul>
         </div>
         <br />
