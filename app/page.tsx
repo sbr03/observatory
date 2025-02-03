@@ -80,7 +80,8 @@ export default function Home() {
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
-          <h1>Status: Canceled, Prof. Richards is busy all this week with a NASA obligation and there is snow in the forecast for Wednesday anyway.  So, you’ll have to enjoy the planet parade by eye (Tuesday look clear) and we’ll try for a telescope open house again next week if the weather cooperates.</h1>
+          <h1>Status: Canceled</h1>
+          <h1>Prof. Richards is busy all this week with a NASA obligation and there is snow in the forecast for Wednesday anyway.  So, you’ll have to enjoy the planet parade by eye (Tuesday look clear) and we’ll try for a telescope open house again next week if the weather cooperates.</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
