@@ -80,7 +80,7 @@ export default function Home() {
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
-          <h1>Status: Canceled. While it is clear, we don't have enough help tonight.</h1>
+          <h1>Status: Canceled. While it is clear, we do not have enough help tonight.</h1>
           <h1></h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
