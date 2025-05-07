@@ -69,7 +69,7 @@ export default function Home() {
           <h1>Our next Open House is scheduled for:</h1>
           <br/>
           <h2 id="date">
-            Wed, May 7th, 8:30-10:00pm
+            Wed, May 7th, 8:30-9:45pm
 {/*             {nextWednesday &&
               nextWednesday.toLocaleDateString("en-US", {
                 weekday: "long",
@@ -86,7 +86,7 @@ export default function Home() {
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
           <ul>
-            <li>Wed, June 4thm 9:00-10:00pm</li>
+            <li>Wed, June 4th 9:00-10:00pm</li>
           </ul>
         </div>
         <br />
