@@ -91,7 +91,7 @@ export default function Home() {
           </ul>
         </div>
         <br />
-        <h1> Please no special requests for the 2025-2026 school year. The telescope is in need of repair. We will still use it for open houses, but not for any other events.</h1>
+        <h1><b>Please no special requests for the 2025-2026 school year. The telescope is in need of repair. We will still use it for open houses, but not for any other events.</b></h1>
         <br />
         <h1>{'Named in honor of our benefactor, Mr. Joseph Lynch, the Lynch Observatory at Drexel houses a 16" Meade Schmidt-Cassegrain, the largest in Philadelphia. '}<br/>
         {'It is the main facility for Drexel\'s Physics 232: Observational Astrophysics, and serves host to frequent public observing nights.'} <br/>
