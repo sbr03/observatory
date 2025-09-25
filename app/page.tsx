@@ -69,7 +69,7 @@ export default function Home() {
           <h1>Our next Open House is scheduled for:</h1>
           <br/>
           <h2 id="date">
-            Mon, June 2nd, 9:00-10:00pm
+            Mon or Tues, October 1st or 2nd, TBD
 {/*             {nextWednesday &&
               nextWednesday.toLocaleDateString("en-US", {
                 weekday: "long",
@@ -80,15 +80,18 @@ export default function Home() {
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
-          <h1>Status: Open House will be on Monday if we are able to do it at all in June</h1>
+          <h1>Status: TBD because Yom Kippur on the 1st</h1>
           <h1></h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
           <h1>Tenative Upcoming Dates:</h1>
           <ul>
-            <li>Mon, June 2nd 9:00-10:00pm</li>
+            <li>Wed, November 5th 5:30-7:30pm</li>
+            <li>Wed, December 3rd 5:00-7:00pm</li>
           </ul>
         </div>
+        <br />
+        <h1> Please no special requests for the 2025-2026 school year. The telescope is in need of repair. We will still use it for open houses, but not for any other events.</h1>
         <br />
         <h1>{'Named in honor of our benefactor, Mr. Joseph Lynch, the Lynch Observatory at Drexel houses a 16" Meade Schmidt-Cassegrain, the largest in Philadelphia. '}<br/>
         {'It is the main facility for Drexel\'s Physics 232: Observational Astrophysics, and serves host to frequent public observing nights.'} <br/>
