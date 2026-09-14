@@ -69,28 +69,22 @@ export default function Home() {
           <h1>Our next Open House is scheduled for:</h1>
           <br/>
           <h2 id="date">
-            Tues, May 5th 8:30-10:00pm
-{/*             {nextWednesday &&
-              nextWednesday.toLocaleDateString("en-US", {
-                weekday: "long",
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })} */}
+            Wed, November 4th 5:30-7:30pm
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
-          <h1>Status: Last telescope open house until October (observatory going down for repairs).</h1>
+          <h1>Status: IF the new telescope is in place by then.  Currently there is no telescope in the dome while we are completing an upgrade.</h1>
           <h1><b>LOCATION:</b> Back at the Lynch Observatory on the roof of Curtis</h1>
           <br />
           {/* Fix this with updated date function, pull first 3 dates from the list */}
-          <h1>Tenative Upcoming Dates:</h1>
-          <ul>
+          <h1><b>Tenative Upcoming Dates:</b></h1>
+          <h1>None until further notice.  Hopefully November and December (and maybe February). <br></br> Note that except February we are unlikely to host open houses in 2027 until October.</h1>
+          {/* <ul>
             <li>Wed, Oct 7th 8:30-10:00pm</li>
-          </ul>
+          </ul> */}
         </div>
         <br />
-        <h1><b>Please no special requests for the 2025-2026 school year. The telescope is in need of repair. We will still use it for open houses, but not for any other events.</b></h1>
+        <h1><b>Please no special requests.  We will use the telescope for regularly scheduled open houses and class, but no requests for special events will be approved.</b></h1>
         <br />
         <h1>{'Named in honor of our benefactor, Mr. Joseph Lynch, the Lynch Observatory at Drexel houses a 16" Meade Schmidt-Cassegrain, the largest in Philadelphia. '}<br/>
         {'It is the main facility for Drexel\'s Physics 232: Observational Astrophysics, and serves host to frequent public observing nights.'} <br/>
