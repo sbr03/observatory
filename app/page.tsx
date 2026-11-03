@@ -69,7 +69,7 @@ export default function Home() {
           <h1>Our next Open House is scheduled for:</h1>
           <br/>
           <h2 id="date">
-            Wed, November 4th 5:30-7:30pm
+            Wed, December 2nd 5:00-7:00pm
           </h2>
 {/*           {countdown !== null && <p id="countdown">{countdown}</p>} */}
 
